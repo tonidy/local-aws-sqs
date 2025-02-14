@@ -1,0 +1,18 @@
+{
+  "name": "local-aws-sqs",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "AWS_ENDPOINT_URL_SQS=http://localhost:5450 bun run index.ts",
+    "q": "bun run create_queues.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "local-aws-sqs": "^1.0.3"
+  }
+}
