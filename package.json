@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "AWS_ENDPOINT_URL_SQS=http://localhost:5450 bun run index.ts",
-    "q": "bun run create_queues.ts"
+    "q": "bun run create_queues.ts",
+    "start": "bun run dev & bun run q"
   },
   "devDependencies": {
     "@types/bun": "latest"
