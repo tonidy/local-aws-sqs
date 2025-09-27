@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "AWS_ENDPOINT_URL_SQS=http://localhost:5450 bun run index.ts",
+    "dev": "AWS_ENDPOINT_URL_SQS=http://localhost:5450 bun run --bun index.ts",
     "q": "bun run create_queues.ts",
     "start": "bun run dev & bun run q"
   },
@@ -11,9 +11,9 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.7.3"
   },
   "dependencies": {
-    "local-aws-sqs": "^1.0.3"
+    "local-aws-sqs": "^2.0.1"
   }
 }
