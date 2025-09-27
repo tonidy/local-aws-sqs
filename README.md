@@ -6,6 +6,18 @@ To install dependencies:
 bun install
 ```
 
+## Environment Setup
+
+- Copy the example env file and customize values:
+
+```bash
+cp .env.example .env
+```
+
+- Variables in `.env`:
+  - `AWS_PROFILE`: AWS CLI profile to use (default `local`).
+  - `QUEUE_NAMES`: Comma-separated SQS queue names to create (e.g. `user-queue,payment-queue`).
+
 To run:
 
 ```bash
